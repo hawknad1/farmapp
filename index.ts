@@ -1,0 +1,51 @@
+export const productCard = [
+  {
+    id: 1,
+    category: "Vegetables",
+    title: "Green Pepper",
+    image: "IMG",
+    price: 20,
+  },
+  {
+    id: 2,
+    category: "Vegetables",
+    title: "Green Pepper",
+    image: "IMG",
+    price: 20,
+  },
+  {
+    id: 3,
+    category: "Vegetables",
+    title: "Green Pepper",
+    image: "IMG",
+    price: 20,
+  },
+  {
+    id: 4,
+    category: "Vegetables",
+    title: "Green Pepper",
+    image: "IMG",
+    price: 20,
+  },
+  {
+    id: 5,
+    category: "Vegetables",
+    title: "Green Pepper",
+    image: "IMG",
+    price: 20,
+  },
+  {
+    id: 6,
+    category: "Vegetables",
+    title: "Green Pepper",
+    image: "IMG",
+    price: 20,
+  },
+  {
+    id: 7,
+    category: "Vegetables",
+    title: "Green Pepper",
+    image: "IMG",
+    price: 20,
+  },
+];

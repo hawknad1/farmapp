@@ -1,3 +1,6 @@
+import CategoryCard from "@/components/CategoryCard";
+import Navbar from "@/components/navbar/Navbar";
+import ProductCard from "@/components/ProductCard";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -8,24 +11,7 @@ export default function Home() {
         <title>Growcer - Fresh Grocery Store</title>
       </Head>
 
-      <header className="bg-gray-100 p-4">
-        <nav className="flex flex-wrap justify-between items-center container mx-auto">
-          <div className="flex items-center space-x-4">
-            <div className="text-2xl font-bold">Growcer</div>
-            <div className="flex-grow">
-              <input
-                type="text"
-                placeholder="Search here..."
-                className="w-full border border-gray-300 rounded p-2"
-              />
-            </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <div>Login</div>
-            <div>Cart</div>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
 
       <main className="container mx-auto py-8">
         <section className="bg-green-100 p-8 rounded-lg flex flex-col md:flex-row items-center">
@@ -49,17 +35,7 @@ export default function Home() {
 
         <section className="my-8">
           <h2 className="text-3xl font-bold mb-4">Shop By Category</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            <div className="p-4 bg-white rounded-lg shadow">Vegetables</div>
-            <div className="p-4 bg-white rounded-lg shadow">Seafood</div>
-            <div className="p-4 bg-white rounded-lg shadow">Eggs</div>
-            <div className="p-4 bg-white rounded-lg shadow">Baking</div>
-            <div className="p-4 bg-white rounded-lg shadow">Cheese</div>
-            <div className="p-4 bg-white rounded-lg shadow">Fresh Fruit</div>
-            <div className="p-4 bg-white rounded-lg shadow">Meat</div>
-            <div className="p-4 bg-white rounded-lg shadow">Milk</div>
-            <div className="p-4 bg-white rounded-lg shadow">Drinks</div>
-          </div>
+          <CategoryCard />
         </section>
 
         <section className="my-8 flex flex-col md:flex-row gap-4">
@@ -83,53 +59,7 @@ export default function Home() {
 
         <section className="my-8">
           <h2 className="text-3xl font-bold mb-4">Farm fresh products</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            <div className="p-4 bg-white rounded-lg shadow">
-              <Image
-                src="/images/banner.jpg"
-                alt="Red Capsicum"
-                width={100}
-                height={100}
-              />
-              <h4 className="font-bold mt-2">Red capsicum</h4>
-              <p>$20.00</p>
-            </div>
-            <div className="p-4 bg-white rounded-lg shadow">
-              <Image
-                src="/images/banner.jpg"
-                alt="Fresh Seafood"
-                width={100}
-                height={100}
-              />
-              <h4 className="font-bold mt-2">Fresh Seafood</h4>
-              <p>$20.00</p>
-            </div>
-            <div className="p-4 bg-white rounded-lg shadow">
-              <Image
-                src="/images/banner.jpg"
-                alt="Orange"
-                width={100}
-                height={100}
-              />
-              <h4 className="font-bold mt-2">Orange</h4>
-              <p>$20.00</p>
-            </div>
-            <div className="p-4 bg-white rounded-lg shadow">
-              <Image src="/vercel.svg" alt="Eclair" width={100} height={100} />
-              <h4 className="font-bold mt-2">Eclair</h4>
-              <p>$20.00</p>
-            </div>
-            <div className="p-4 bg-white rounded-lg shadow">
-              <Image
-                src="/images/banner.jpg"
-                alt="Raw minced meat"
-                width={100}
-                height={100}
-              />
-              <h4 className="font-bold mt-2">Raw minced meat</h4>
-              <p>$20.00</p>
-            </div>
-          </div>
+          <ProductCard />
         </section>
 
         <section className="my-8 bg-red-100 p-8 rounded-lg flex flex-col md:flex-row items-center">
