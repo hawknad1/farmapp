@@ -1,4 +1,5 @@
 import CategoryCard from "@/components/CategoryCard";
+import MiddleCard from "@/components/MiddleCard";
 import Navbar from "@/components/navbar/Navbar";
 import ProductCard from "@/components/ProductCard";
 import Head from "next/head";
@@ -39,22 +40,7 @@ export default function Home() {
         </section>
 
         <section className="my-8 flex flex-col md:flex-row gap-4">
-          <div className="p-8 bg-orange-100 rounded-lg flex-1">
-            <h3 className="text-2xl font-bold mb-4">
-              Everyday fresh & clean with our products
-            </h3>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded">
-              Shop Now
-            </button>
-          </div>
-          <div className="p-8 bg-green-100 rounded-lg flex-1">
-            <h3 className="text-2xl font-bold mb-4">
-              Make your breakfast healthy and easy
-            </h3>
-            <button className="bg-green-500 text-white px-4 py-2 rounded">
-              Shop Now
-            </button>
-          </div>
+          <MiddleCard />
         </section>
 
         <section className="my-8">
