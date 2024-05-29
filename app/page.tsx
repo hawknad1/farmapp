@@ -1,9 +1,14 @@
-import CategoryCard from "@/components/CategoryCard";
 import MiddleCard from "@/components/MiddleCard";
-import Navbar from "@/components/navbar/Navbar";
-import ProductCard from "@/components/ProductCard";
+
 import Head from "next/head";
-import Image from "next/image";
+import ProductCards from "@/components/ProductCards";
+import PaginationButtons from "@/components/PaginationButtons";
+import CategoryCards from "@/components/cards/CategoryCards";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
+import Hero from "@/components/Hero";
+import Testimonials from "@/components/Testimonials";
+import OrganicCard from "@/components/OrganicCard";
+import DeliveryCard from "./DeliveryCard";
 
 export default function Home() {
   return (
@@ -12,31 +17,27 @@ export default function Home() {
         <title>Growcer - Fresh Grocery Store</title>
       </Head>
 
-      <Navbar />
-
       <main className="container mx-auto py-8">
-        <section className="bg-green-100 p-8 rounded-lg flex flex-col md:flex-row items-center">
-          <Image
-            src="/images/banner.jpg"
-            alt="Farmer"
-            width={500}
-            height={300}
-            className="rounded-lg"
-          />
-          <div className="mt-4 md:mt-0 md:ml-8">
-            <h1 className="text-4xl font-bold">
-              Don't Miss Out on Tasty Grocery Deals!
-            </h1>
-            <p className="text-xl mt-4">Save up to 50% off on your first buy</p>
-            <button className="mt-4 bg-green-500 text-white px-4 py-2 rounded">
-              Shop Now
-            </button>
-          </div>
+        <section className="">
+          <Hero />
         </section>
 
-        <section className="my-8">
-          <h2 className="text-3xl font-bold mb-4">Shop By Category</h2>
-          <CategoryCard />
+        <section className="my-10">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
+              Shop By Category
+            </h2>
+            <div className="flex gap-2">
+              <div className="bg-slate-100 p-1 rounded-full cursor-pointer">
+                <ChevronLeftIcon className="size-5" />
+              </div>
+              <div className="bg-slate-100 p-1 rounded-full cursor-pointer">
+                <ChevronRightIcon className="size-5" />
+              </div>
+            </div>
+          </div>
+
+          <CategoryCards />
         </section>
 
         <section className="my-8 flex flex-col md:flex-row gap-4">
@@ -44,138 +45,29 @@ export default function Home() {
         </section>
 
         <section className="my-8">
-          <h2 className="text-3xl font-bold mb-4">Farm fresh products</h2>
-          <ProductCard />
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
+              Farm fresh products
+            </h2>
+            <div>
+              <PaginationButtons />
+            </div>
+          </div>
+          <ProductCards />
         </section>
 
         <section className="my-8 bg-red-100 p-8 rounded-lg flex flex-col md:flex-row items-center">
-          <Image
-            src="/images/banner.jpg"
-            alt="Delivery"
-            width={100}
-            height={100}
-            className="rounded-lg"
-          />
-          <div className="mt-4 md:mt-0 md:ml-8">
-            <h2 className="text-3xl font-bold">
-              We ship on the following day from 10:00 AM to 08:00 PM
-            </h2>
-            <p>For purchases over $20.00</p>
-            <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded">
-              Order Now
-            </button>
-          </div>
+          <DeliveryCard />
         </section>
 
         <section className="my-8">
-          <h2 className="text-3xl font-bold mb-4">
-            Fresh & Flavorful organic goods
-          </h2>
-          <div className="flex flex-col md:flex-row">
-            <Image
-              src="/images/banner.jpg"
-              alt="Farmer"
-              width={200}
-              height={200}
-              className="rounded-lg"
-            />
-            <div className="ml-0 md:ml-8 mt-4 md:mt-0">
-              <div className="mb-4">
-                <h4 className="font-bold">Healthy Cruciferous</h4>
-                <p>
-                  Cruciferous vegetables belong to the Brassicaceae family...
-                </p>
-              </div>
-              <div className="mb-4">
-                <h4 className="font-bold">Fresh Root Vegetables</h4>
-                <p>Root vegetables like carrots, beets, and radishes...</p>
-              </div>
-              <div className="mb-4">
-                <h4 className="font-bold">Dry Fruits & Nuts</h4>
-                <p>
-                  Dry fruits and nuts are a great source of essential
-                  nutrients...
-                </p>
-              </div>
-              <div className="mb-4">
-                <h4 className="font-bold">Organic Vegetables</h4>
-                <p>
-                  Organic vegetables are grown without the use of synthetic
-                  pesticides...
-                </p>
-              </div>
-              <div className="mb-4">
-                <h4 className="font-bold">Natural Citrus Fruits</h4>
-                <p>
-                  Citrus fruits are known for their high vitamin C content...
-                </p>
-              </div>
-              <div className="mb-4">
-                <h4 className="font-bold">Healthy Leafy Green</h4>
-                <p>
-                  Leafy greens like spinach, kale, and lettuce are
-                  nutrient-dense...
-                </p>
-              </div>
-            </div>
-          </div>
+          <OrganicCard />
         </section>
 
         <section className="my-8 bg-gray-100 p-8 rounded-lg">
-          <h2 className="text-3xl font-bold mb-4">Testimonials</h2>
-          <div className="flex items-center">
-            <Image
-              src="/images/banner.jpg"
-              alt="Customer"
-              width={50}
-              height={50}
-              className="rounded-full"
-            />
-            <div className="ml-4">
-              <p className="italic">
-                "I love shopping at this grocery store! The wide variety of
-                fresh produce and friendly staff make every visit enjoyable and
-                convenient."
-              </p>
-              <div className="mt-2 font-bold">Jack Mahir</div>
-            </div>
-          </div>
+          <Testimonials />
         </section>
       </main>
-
-      <footer className="bg-gray-800 text-white p-8">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between">
-          <div>
-            <div className="text-2xl font-bold">Growcer</div>
-            <div>3 Beach Nook, Hovefort</div>
-            <div>example@gmail.com</div>
-            <div>10:00 - 18:00, Mon - Sat</div>
-          </div>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-            <div>
-              <h4 className="font-bold mb-2">Account</h4>
-              <div>Login</div>
-              <div>View Cart</div>
-              <div>My Order</div>
-              <div>New Product</div>
-              <div>Contact Us</div>
-            </div>
-            <div>
-              <h4 className="font-bold mb-2">Company</h4>
-              <div>About Us</div>
-              <div>Privacy Policy</div>
-              <div>Terms & Conditions</div>
-              <div>Help</div>
-              <div>Careers</div>
-            </div>
-            <div>
-              <h4 className="font-bold mb-2">Payment Methods</h4>
-              <div>VISA</div>
-              <div>PayPal</div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
