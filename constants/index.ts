@@ -215,3 +215,25 @@ export const accordion = [
       "Leafy greens like spinach, kale, and lettuce are nutrient-dense.",
   },
 ];
+
+export const accountLinks = [
+  { id: 1, title: "Login", href: "/login" },
+  { id: 2, title: "View Cart", href: "/cart" },
+  { id: 3, title: "My Order", href: "/orders" },
+  { id: 4, title: "Contact Us", href: "/contact" },
+];
+
+export const companyLinks = [
+  { id: 1, title: "About Us", href: "/about" },
+  { id: 2, title: "Privacy Policy", href: "/privacy" },
+  { id: 3, title: "Terms & Conditions", href: "/terms" },
+  { id: 4, title: "Help", href: "/help" },
+  { id: 5, title: "Careers", href: "/careers" },
+];
+
+export const paymentLinks = [
+  { id: 1, image: "/images/mtn.png" },
+  { id: 2, image: "/images/paypal.png" },
+  { id: 3, image: "/images/visa.png" },
+  { id: 4, image: "/images/mastercard.png" },
+];
