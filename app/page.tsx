@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className="container mx-auto py-8">
-        <section className="">
+        <section className="bg-[#254336] rounded-lg">
           <Hero />
         </section>
 

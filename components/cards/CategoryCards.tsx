@@ -1,49 +1,16 @@
 import React from "react";
 import CategoryCard from "../CategoryCard";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { categoryCard } from "@/constants";
 
 const CategoryCards = () => {
   return (
-    <Carousel>
-      <CarouselContent>
-        <div className="flex items-center gap-4">
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-        </div>
-      </CarouselContent>
-    </Carousel>
+    <div className="overflow-x-auto scrollbar-hide">
+      <div className="flex space-x-4 p-4 w-max ">
+        {categoryCard.map((card) => (
+          <CategoryCard data={card} key={card.id} />
+        ))}
+      </div>
+    </div>
   );
 };
 
