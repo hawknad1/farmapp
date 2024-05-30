@@ -8,7 +8,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import OrganicCard from "@/components/OrganicCard";
-import DeliveryCard from "./DeliveryCard";
+import DeliveryCard from "../components/DeliveryCard";
 
 export default function Home() {
   return (
@@ -56,7 +56,7 @@ export default function Home() {
           <ProductCards />
         </section>
 
-        <section className="my-8 bg-red-100 p-8 rounded-lg flex flex-col md:flex-row items-center">
+        <section className="my-8 bg-[#E4DCCF] p-5 rounded-lg flex flex-col md:flex-row items-center ">
           <DeliveryCard />
         </section>
 

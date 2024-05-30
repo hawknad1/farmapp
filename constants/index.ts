@@ -112,6 +112,48 @@ export const categoryCard = [
   },
 ];
 
+export const accordion = [
+  {
+    id: 1,
+    value: "item-1",
+    heading: "Healthy Cruciferous",
+    description: "Cruciferous vegetables belong to the Brassicaceae family.",
+  },
+  {
+    id: 2,
+    value: "item-2",
+    heading: "Fresh Root Vegetables",
+    description: "Root vegetables like carrots, beets, and radishes.",
+  },
+  {
+    id: 3,
+    value: "item-3",
+    heading: "Dry Fruits & Nuts",
+    description:
+      "Dry fruits and nuts are a great source of essential nutrients.",
+  },
+  {
+    id: 4,
+    value: "item-4",
+    heading: "Organic Vegetables",
+    description:
+      "Organic vegetables are grown without the use of synthetic pesticides",
+  },
+  {
+    id: 5,
+    value: "item-5",
+    heading: "Natural Citrus Fruits",
+    description: "Citrus fruits are known for their high vitamin C content",
+  },
+  {
+    id: 6,
+    value: "item-6",
+    heading: "Healthy Leafy Green",
+    description:
+      "Leafy greens like spinach, kale, and lettuce are nutrient-dense.",
+  },
+];
+
 // export const categoryCard = [
 //   {
 //     id: 1,
