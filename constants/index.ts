@@ -174,6 +174,29 @@ export const categoryCard = [
   },
 ];
 
+export const menuLinks = [
+  {
+    id: 1,
+    title: "Home",
+    href: "/",
+  },
+  {
+    id: 2,
+    title: "Shop",
+    href: "/shop",
+  },
+  {
+    id: 3,
+    title: "Category",
+    href: "/category",
+  },
+  {
+    id: 4,
+    title: "About",
+    href: "/about",
+  },
+];
+
 export const accordion = [
   {
     id: 1,

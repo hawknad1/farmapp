@@ -13,6 +13,8 @@ import {
 } from "../ui/sheet";
 import { Bars3BottomRightIcon } from "@heroicons/react/24/outline";
 import { Button } from "../ui/button";
+import { menuLinks } from "@/constants";
+import Link from "next/link";
 
 const SideSheet = () => {
   return (
@@ -23,29 +25,14 @@ const SideSheet = () => {
         </button>
       </SheetTrigger>
       <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
-          </SheetDescription>
-        </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
-          </div>
+        <div className="flex flex-col gap-4">
+          {menuLinks.map((menu) => (
+            <Link href={menu.href}>{menu.title}</Link>
+          ))}
         </div>
         <SheetFooter>
           <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
+            <Button type="submit">Sign Out</Button>
           </SheetClose>
         </SheetFooter>
       </SheetContent>
