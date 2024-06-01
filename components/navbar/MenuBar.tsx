@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const MenuBar = () => {
   return (
-    <Menubar className="bg-transparent border-none text-white flex gap-3">
+    <Menubar className="bg-transparent border-none text-black flex gap-3">
       <MenubarMenu>
         <Link
           href="/"

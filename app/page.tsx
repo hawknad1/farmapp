@@ -1,14 +1,13 @@
 import MiddleCard from "@/components/MiddleCard";
-
 import Head from "next/head";
 import ProductCards from "@/components/ProductCards";
 import PaginationButtons from "@/components/PaginationButtons";
 import CategoryCards from "@/components/cards/CategoryCards";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/16/solid";
-import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import OrganicCard from "@/components/OrganicCard";
 import DeliveryCard from "../components/DeliveryCard";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
@@ -19,7 +18,7 @@ export default function Home() {
 
       <main className="container mx-auto py-8">
         <section className="bg-[#254336] rounded-lg">
-          <Hero />
+          <Banner />
         </section>
 
         <section className="my-10">
