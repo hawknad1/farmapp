@@ -227,8 +227,20 @@ export const companyLinks = [
   { id: 1, title: "About Us", href: "/about" },
   { id: 2, title: "Privacy Policy", href: "/privacy" },
   { id: 3, title: "Terms & Conditions", href: "/terms" },
-  { id: 4, title: "Help", href: "/help" },
-  { id: 5, title: "Careers", href: "/careers" },
+  { id: 4, title: "Careers", href: "/careers" },
+];
+
+export const helpfulLinks = [
+  { id: 1, title: "Help", href: "/about" },
+  { id: 2, title: "FAQs", href: "/privacy" },
+  { id: 3, title: "Live Chat", href: "/terms" },
+  { id: 4, title: "Refund Policy", href: "/careers" },
+];
+
+export const footerLeftLinks = [
+  { id: 1, title: "Terms & Conditions", href: "/terms" },
+  { id: 2, title: "Privacy Policy", href: "/privacy" },
+  { id: 3, title: "Cookies", href: "/cookies" },
 ];
 
 export const paymentLinks = [
@@ -236,4 +248,22 @@ export const paymentLinks = [
   { id: 2, image: "/images/paypal.png" },
   { id: 3, image: "/images/visa.png" },
   { id: 4, image: "/images/mastercard.png" },
+];
+
+export const socialLinks = [
+  {
+    title: "Twitter",
+    svg: "",
+    href: "",
+  },
+  {
+    title: "Facebook",
+    svg: "",
+    href: "",
+  },
+  {
+    title: "Instagram",
+    svg: "",
+    href: "",
+  },
 ];

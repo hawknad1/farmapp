@@ -8,13 +8,22 @@ import React, { useState } from "react";
 import TopBarNav from "./TopBarNav";
 import SignInPopUp from "../SignInPopUp";
 import SideSheet from "./SideSheet";
+import Nav from "./Nav";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className="">
       <TopBarNav />
-      <nav className="bg-gray-100 p-4 w-full">
+      <Nav />
+    </header>
+  );
+};
+
+export default Navbar;
+
+{
+  /* <nav className="bg-gray-100 p-4 w-full">
         <div className="flex relative items-center justify-between w-full mx-auto space-x-4">
           <div className="text-2xl font-bold">Growcer</div>
           <div className="flex absolute left-24 md:left-36 md:w-96 items-center border px-2 border-gray-300 rounded-3xl">
@@ -34,9 +43,5 @@ const Navbar = () => {
             <SideSheet />
           </div>
         </div>
-      </nav>
-    </header>
-  );
-};
-
-export default Navbar;
+      </nav> */
+}

@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zorostique Farms",
+  title: "Sowgreen Farms",
   description: "Get your organic farm produce",
 };
 
