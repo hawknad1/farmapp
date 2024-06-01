@@ -27,7 +27,9 @@ const SideSheet = () => {
       <SheetContent>
         <div className="flex flex-col gap-4">
           {menuLinks.map((menu) => (
-            <Link href={menu.href}>{menu.title}</Link>
+            <Link key={menu.id} href={menu.href}>
+              {menu.title}
+            </Link>
           ))}
         </div>
         <SheetFooter>

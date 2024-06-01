@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { ShoppingBagIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
+import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 
 const Banner = () => {
   return (
