@@ -19,7 +19,7 @@ const Testimonials = () => {
             produce and friendly staff make every visit enjoyable and
             convenient."
           </p>
-          <div className="mt-2 font-bold">Jack Mahir</div>
+          <div className="mt-2 font-bold">Thomas Dankwah</div>
         </div>
       </div>
     </div>
