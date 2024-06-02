@@ -6,32 +6,32 @@ import SignInPopUp from "./SignInPopUp";
 import SideSheet from "./navbar/SideSheet";
 import Link from "next/link";
 import UserAvatar from "./UserAvatar";
+import { Input } from "./ui/input";
 
 const Header = () => {
   return (
-    <div className="flex items-center mx-auto p-2 space-x-1 lg:space-x-4 px-4">
-      <Link href="/" className="flex-1">
+    <div className="flex items-center mx-auto p-2 justify-between px-4 gap-2">
+      <Link href="/" className="">
         <Image
           src="/images/sowgreen.png"
           alt="logo"
           width={80}
           height={80}
-          className="object-contain w-24"
+          className="object-contain w-16 md:w-24 "
         />
       </Link>
 
-      <div className=" ">
-        <form className="flex items-center space-x-1 bg-gray-100 p-2 rounded-md flex-1 max-w-96">
-          <SearchIcon className="h-4 text-gray-600" />
-          <input
-            type="text"
-            placeholder="Search"
-            className="bg-transparent flex-1 outline-none"
+      <div className=" lg:flex-1 lg:px-4">
+        <div className="flex space-x-1 items-center max-w-xl  bg-gray-100 px-1.5 py-1 rounded-full">
+          <SearchIcon className="h-4 text-gray-500" />
+          <Input
+            className="h-6 md:h-8 text-xs lg:text-sm bg-transparent border-none focus-visible:ring-offset-0 focus-visible:ring-0"
+            placeholder="Search products"
           />
-        </form>
+        </div>
       </div>
 
-      <div className=" flex items-center">
+      <div className=" flex items-center ">
         <div className="hidden lg:flex">
           <MenuBar />
         </div>
