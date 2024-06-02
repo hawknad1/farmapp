@@ -10,7 +10,7 @@ import UserAvatar from "./UserAvatar";
 const Header = () => {
   return (
     <div className="flex items-center mx-auto p-2 space-x-1 lg:space-x-4 px-4">
-      <Link href="/">
+      <Link href="/" className="flex-1">
         <Image
           src="/images/sowgreen.png"
           alt="logo"
@@ -20,7 +20,7 @@ const Header = () => {
         />
       </Link>
 
-      <div className="flex-1 ">
+      <div className=" ">
         <form className="flex items-center space-x-1 bg-gray-100 p-2 rounded-md flex-1 max-w-96">
           <SearchIcon className="h-4 text-gray-600" />
           <input
