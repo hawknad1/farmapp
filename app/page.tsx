@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import OrganicCard from "@/components/OrganicCard";
 import DeliveryCard from "../components/DeliveryCard";
 import Banner from "@/components/Banner";
+import Middle from "@/components/Middle";
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
         </section>
 
         <section className="my-8 flex flex-col md:flex-row gap-4">
-          <MiddleCard />
+          <Middle />
         </section>
 
         <section className="my-8">
